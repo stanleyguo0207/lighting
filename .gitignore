@@ -1,0 +1,5 @@
+# rust compiled folders
+target/
+
+# lock for libs
+/Cargo.lock
