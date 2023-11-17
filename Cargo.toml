@@ -1,2 +1,13 @@
+# https://doc.rust-lang.org/cargo/reference/manifest.html
+
 [workspace]
+resolver = "2"
 members = ["lighting"]
+
+[workspace.package]
+authors = ["stanleyguo0207 <stanleyguo0207@163.com>"]
+edition = "2021"
+rust-version = "1.74.0"
+repository = "https://github.com/stanleyguo0207/lighting.git"
+license = "MIT"
+categories = []
