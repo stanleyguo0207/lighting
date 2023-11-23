@@ -9,6 +9,11 @@
   "rust-analyzer.server.extraEnv": {
     "CARGO_UNSTABLE_SPARSE_REGISTRY": "true",
   },
+  "rust-analyzer.check.overrideCommand": [
+    "leptosfmt",
+    "--stdin",
+    "--rustfmt"
+  ],
   "debug.allowBreakpointsEverywhere": true,
   "emmet.includeLanguages": {
     "rust": "html"

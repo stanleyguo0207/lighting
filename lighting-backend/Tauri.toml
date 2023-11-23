@@ -1,16 +1,12 @@
 # https://tauri.app/v1/api/config
 
-[build]
-beforeDevCommand = "trunk serve --config lighting-frontend/Trunk.toml"
-beforeBuildCommand = "trunk build --config lighting-frontend/Trunk.toml"
-devPath = "http://localhost:1420"
-distDir = "../dist"
-withGlobalTauri = true
-
+# https://tauri.app/v1/api/config#packageconfig
 [package]
 productName = "lighting"
 version = "0.1.0"
 
+
+# https://tauri.app/v1/api/config#tauriconfig
 [tauri]
 
 [tauri.allowlist]
@@ -36,8 +32,22 @@ icon = [
 csp = "null"
 
 [[tauri.windows]]
-fullscreen = false
-resizable = true
-title = "lighting"
+center = true
 width = 800
 height = 600
+resizable = true
+title = "lighting"
+fullscreen = false
+
+
+# https://tauri.app/v1/api/config#buildconfig
+[build]
+beforeDevCommand = "trunk serve --config lighting-frontend/Trunk.toml"
+beforeBuildCommand = "trunk build --config lighting-frontend/Trunk.toml"
+devPath = "http://localhost:1420"
+distDir = "../dist"
+withGlobalTauri = true
+
+
+# https://tauri.app/v1/api/config#pluginconfig
+[plugins]

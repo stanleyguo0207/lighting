@@ -4,7 +4,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "ui:dev",
+      "label": "lighting:dev",
       "type": "shell",
       // `dev` keeps running in the background
       // ideally you should also configure a `problemMatcher`
@@ -15,16 +15,28 @@
       "args": [
         "tauri",
         "dev"
-      ]
+      ],
+      "dependsOn": "lighting:fmt"
     },
     {
-      "label": "ui:build",
+      "label": "lighting:build",
       "type": "shell",
       // change this to your `beforeBuildCommand`:
       "command": "cargo",
       "args": [
         "tauri",
         "build"
+      ],
+      "dependsOn": "lighting:fmt"
+    },
+    {
+      "label": "lighting:fmt",
+      "type": "shell",
+      "command": "leptosfmt",
+      "args": [
+        "lighting-frontend",
+        "-c",
+        "lighting-frontend/.leptosfmt.toml"
       ]
     }
   ]
