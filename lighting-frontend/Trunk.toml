@@ -1,0 +1,13 @@
+# https://github.com/thedodd/trunk/blob/master/Trunk.toml
+
+[build]
+target = "./index.html"
+dist = "../dist"
+
+[watch]
+ignore = ["../lighting-backend"]
+
+[serve]
+address = "127.0.0.1"
+port = 1420
+open = false

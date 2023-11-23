@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "tauri-apps.tauri-vscode",
+    "vadimcn.vscode-lldb",
+    "1yib.rust-bundle",
+    "tamasfe.even-better-toml",
+    "editorconfig.editor",
+    "actboy168.tasks"
+  ]
+}

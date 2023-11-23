@@ -1,11 +1,8 @@
-# vscode
-.vscode
-
 # rust compiled folders
-target/
+/target/
+
+# rust destination folders
+/dist/
 
 # lock for libs
 /Cargo.lock
-
-# temp
-/temp
