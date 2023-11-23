@@ -1,7 +1,7 @@
 # https://github.com/thedodd/trunk/blob/master/Trunk.toml
 
 [build]
-target = "./index.html"
+target = "index.html"
 dist = "../dist"
 
 [watch]

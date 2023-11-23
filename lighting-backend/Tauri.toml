@@ -42,7 +42,7 @@ fullscreen = false
 
 # https://tauri.app/v1/api/config#buildconfig
 [build]
-beforeDevCommand = "trunk serve --config lighting-frontend/Trunk.toml"
+beforeDevCommand = "cargo watch -w lighting-frontend -- trunk serve --config lighting-frontend/Trunk.toml"
 beforeBuildCommand = "trunk build --config lighting-frontend/Trunk.toml"
 devPath = "http://localhost:1420"
 distDir = "../dist"
