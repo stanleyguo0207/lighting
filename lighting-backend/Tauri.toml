@@ -9,13 +9,6 @@ version = "0.1.0"
 # https://tauri.app/v1/api/config#tauriconfig
 [tauri]
 
-[tauri.allowlist]
-all = false
-
-[tauri.allowlist.shell]
-all = false
-open = false
-
 [tauri.bundle]
 active = true
 targets = "all"

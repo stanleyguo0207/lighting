@@ -16,7 +16,11 @@
         "tauri",
         "dev"
       ],
-      "dependsOn": "lighting:fmt"
+      "dependsOn": "lighting:fmt",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
     },
     {
       "label": "lighting:build",
@@ -37,7 +41,16 @@
         "lighting-frontend",
         "-c",
         "lighting-frontend/.leptosfmt.toml"
-      ]
+      ],
+      "dependsOn": "lighting:clippy"
+    },
+    {
+      "label": "lighting:clippy",
+      "type": "shell",
+      "command": "cargo",
+      "args": [
+        "clippy"
+      ],
     }
   ]
 }
