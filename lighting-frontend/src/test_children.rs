@@ -20,10 +20,7 @@ pub fn TestChildren() -> impl IntoView {
   };
 
   view! {
-    <TakesChildren // for component props, you can shorthand
-    // `render_prop=render_prop` => `render_prop`
-    // (this doesn't work for HTML element attributes)
-    render_prop>
+    <TakesChildren render_prop>
       // these look just like the children of an HTML element
       <p>"Here's a child."</p>
       <p>"Here's another child."</p>
