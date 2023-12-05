@@ -25,9 +25,9 @@ pub fn TestSuspense() -> impl IntoView {
       <code>"name:"</code>
       {name}
     </p>
-    <Suspense // the fallback will show whenever a resource
+    // the fallback will show whenever a resource
     // read "under" the suspense is loading
-    fallback=move || view! { <p>"Loading..."</p> }>
+    <Suspense fallback=move || view! { <p>"Loading..."</p> }>
       // the children will be rendered once initially,
       // and then whenever any resources has been resolved
       <p>"Your shouting name is " {move || async_data.get()}</p>
