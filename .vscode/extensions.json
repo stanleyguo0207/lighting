@@ -1,10 +1,13 @@
 {
   "recommendations": [
+    "1yib.rust-bundle",
     "tauri-apps.tauri-vscode",
     "vadimcn.vscode-lldb",
-    "1yib.rust-bundle",
     "tamasfe.even-better-toml",
     "editorconfig.editor",
-    "actboy168.tasks"
+    "actboy168.tasks",
+    "gruntfuggly.todo-tree",
+    "redhat.vscode-xml",
+    "redhat.vscode-yaml"
   ]
 }
