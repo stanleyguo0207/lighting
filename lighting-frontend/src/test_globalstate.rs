@@ -118,8 +118,7 @@ fn Option3() -> impl IntoView {
     <h1>"Option 3: Passing Signals"</h1>
     <div class="red consumer" style="width: 100%">
       <h2>"Current Global State"</h2>
-      <pre>{move || { format!("{:#?}", state.get()) }}
-      </pre>
+      <pre>{move || { format!("{:#?}", state.get()) }}</pre>
     </div>
     <div style="display: flex">
       <GlobalStateCounter/>

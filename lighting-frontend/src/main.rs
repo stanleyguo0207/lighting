@@ -8,7 +8,9 @@
 // mod test_suspense;
 // mod test_transition;
 // mod test_actions;
-mod test_globalstate;
+// mod test_globalstate;
+// mod test_router;
+mod test_routerform;
 
 use leptos::*;
 // use test_forminput::*;
@@ -21,7 +23,9 @@ use leptos::*;
 // use test_suspense::*;
 // use test_transition::*;
 // use test_actions::*;
-use test_globalstate::*;
+// use test_globalstate::*;
+// use test_router::*;
+use test_routerform::*;
 
 fn main() {
   // mount_to_body(Ui)
@@ -34,5 +38,7 @@ fn main() {
   // mount_to_body(TestSuspense)
   // mount_to_body(TestTransition)
   // mount_to_body(TestActions)
-  mount_to_body(TestGlobalState)
+  // mount_to_body(TestGlobalState)
+  // mount_to_body(TestRouter)
+  mount_to_body(TestRouterForm)
 }
